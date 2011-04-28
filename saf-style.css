@@ -1,0 +1,59 @@
+/*
+Similar Artist Finder (SAF) application
+version 1.0.0 (beta)
+
+Developed by Rishabh Rao
+
+rishabhsrao@gmail.com
+rishabhsrao.blogspot.com
+twitter.com/rishabhsrao
+facebook.com/rishabhsrao
+
+This file is a part of SAF.
+
+SAF is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+SAF is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with SAF.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+body
+{
+    background: white;
+    color: #4d4d4d;
+    font-family: sans-serif;
+	font-size: 11pt;
+    
+}
+
+.safTitle	{ text-align: center; }
+
+img	{ border: none; }
+
+input { font-size: 16pt; }
+
+h1 { color: #4d4d4d; }
+
+h2, h3 { color: #222222; }
+
+a:link		{ color: #4d4d4d; text-decoration: none; }
+a:visited	{ color: #4d4d4d; text-decoration: none; }
+a:hover		{ color: #4d4d4d; text-decoration: underline; }
+a:active	{ color: #4d4d4d; text-decoration: none; }
+
+
+table
+{
+	width: 800px;
+	text-align: left;
+}
+
+.ui-icon { display: inline-block !important; }

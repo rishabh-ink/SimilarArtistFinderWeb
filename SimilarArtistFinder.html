@@ -1,0 +1,122 @@
+<!--
+Similar Artist Finder (SAF) application
+version 1.0.0 (beta)
+
+Developed by Rishabh Rao
+
+rishabhsrao@gmail.com
+rishabhsrao.blogspot.com
+twitter.com/rishabhsrao
+facebook.com/rishabhsrao
+
+This file is a part of SAF.
+
+SAF is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+SAF is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with SAF.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Similar Artist Finder</title>
+		
+		<!-- *** jQuery UI library stylesheet *** -->
+        <link rel="stylesheet" type="text/css" href="http://kenai.com/downloads/similarartistfinder/theme/jquery-ui-1.8.4.custom.css" />	<!-- the excite-bike jQuery UI theme (customized) -->
+		
+		<!-- *** jQuery and jQuery UI libray scripts *** -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 				<!-- the main jQuery library in its minified form -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>			<!-- the main jQuery UI library in its minified form -->
+		
+		<!-- *** SAF application specific script *** -->
+		<script type="text/javascript" src="http://kenai.com/downloads/similarartistfinder/script/saf-script.js"></script>			<!-- handles the processing flow -->
+		
+		<!-- *** SAF application specific stylesheet *** -->		
+		<link rel="stylesheet" type="text/css" href="http://kenai.com/downloads/similarartistfinder/style/saf-style.css" />			<!-- some basic styling information -->
+		
+
+	</head>
+    <body>
+    	<script type="text/javascript">
+			// !<[CDATA[
+			jQuery(document).ready(init);
+			
+			/**
+			 * Initializes the application.
+			 */
+			function init()
+			{
+				var app = new Application();
+				
+				// start the initialization process
+				app.main();
+			}
+			// ]]>
+		</script>
+		<table>
+	        <tr>
+				<td class="safTitle">
+					<a href="http://kenai.com/projects/similarartistfinder"><img title="Similar Artist Finder" src="http://kenai.com/projects/similarartistfinder/downloads/download/res/saf.jpeg" alt="Similar Artist Finder"/></a>					
+					<p>Created by <strong>Rishabh Rao</strong><br />
+					Catch me on...<br />
+					<a href="http://www.twitter.com/rishabhsrao"><img title="Rishabh @ Twitter" src="http://kenai.com/projects/similarartistfinder/downloads/download/res/twitterLogo.jpeg" alt="Twitter"/></a>
+					<a href="http://www.facebook.com/rishabhsrao" target="_TOP" title="Rishabh @ Facebook"><img alt="Facebook" src="http://badge.facebook.com/badge/100000457697724.1803.1265904475.png" width="120" height="136" style="border: 0px;" /></a>										
+					<a href="http://rishabhsrao.blogspot.com"><img title="Rishabh @ Blogspot" src="http://kenai.com/projects/similarartistfinder/downloads/download/res/bloggerLogo.jpeg" alt="Blogspot"/></a>
+					</p>			
+				</td>
+			</tr>
+			<tr>
+				<td class="safTitle">
+					<p>Powered by...
+					<br />
+					<a href="http://www.last.fm"><img title="Last.fm" src="http://kenai.com/projects/similarartistfinder/downloads/download/res/lastfm.png" alt="Last.fm"/></a>
+					<a href="http://developer.yahoo.com/yql"><img title="Yahoo! Query Language" src="http://kenai.com/projects/similarartistfinder/downloads/download/res/yql.jpeg" alt="Yahoo! Query Language (YQL)"/></a>
+					<a href="http://pipes.yahoo.com/pipes"><img title="Yahoo! Pipes" src="http://kenai.com/projects/similarartistfinder/downloads/download/res/pipes.gif" alt="Yahoo! Pipes"/></a>					
+					<a href="http://jquery.com"><img title="jQuery" src="http://kenai.com/projects/similarartistfinder/downloads/download/res/jquery.jpeg" alt="jQuery"/></a>
+					<a href="http://jqueryui.com"><img title="jQueryUI" src="http://kenai.com/projects/similarartistfinder/downloads/download/res/jqueryui.jpeg" alt="jQuery UI"/></a>
+					</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Artist's name? <input type="text" size="32" id="artistNameAutocomplete"></label>
+					<button id="findSimilarButton" name="findSimilarButton">Find</button>
+					<button id="resetButton" name="resetButton">Reset</button>
+				</td>				
+			</tr>
+						
+			<tr>
+				<td>
+					<div id="statusBar">
+						<!-- status information here -->
+					</div>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<div id="selectedArtistInfo">
+						<!-- information about the selected artist here -->						
+					</div>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<div id="artistList">
+					<!-- similar artists here -->
+					</div>
+				</td>
+			</tr>
+		</table>		
+    </body>
+</html>

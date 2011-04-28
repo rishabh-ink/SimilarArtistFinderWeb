@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Last FM: Get Similar Artists</title>
+		
+		<link rel="stylesheet" type="text/css" href="lib/jquery/jquery-ui-1.8.2.custom.css"></link>
+		<script type="text/javascript" src="lib/jquery/jquery-1.4.2.js"></script>
+		<script type="text/javascript" src="lib/jquery/jquery-ui-1.8.2.custom.min.js"></script>
+		
+		<script type="text/javascript">
+			// <![CDATA[
+				$(document).ready(init);
+				
+				function init()
+				{
+					
+				}
+			// ]]>
+		</script>
+		
+    </head>
+    <body>
+        <h1>Last FM: Get Similar Artists</h1>
+		
+    </body>
+</html>

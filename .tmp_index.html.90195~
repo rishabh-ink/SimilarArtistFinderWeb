@@ -1,0 +1,99 @@
+<!--
+This file is part of (SAF) Similar Artist Finder.
+
+SAF is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+SAF is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with SAF.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Similar Artist Finder</title>
+		
+		<!-- *** jQuery UI library stylesheet *** -->
+        <link rel="stylesheet" type="text/css" href="lib/jquery/jquery-ui-1.8.4.custom.css" />	<!-- the excite-bike jQuery UI theme -->
+		
+		<!-- *** SAF application stylesheet *** -->        
+        <link rel="stylesheet" type="text/css" href="css/saf-com1mon.css" /> 						<!-- common, overall application look and feel (LaF) -->  
+        
+		<!-- *** jQuery and jQuery UI libray scripts *** -->
+        <script type="text/javascript" src="lib/jquery/jquery-1.4.2.min.js"></script> 				<!-- the main jQuery library in its minified form -->
+        <script type="text/javascript" src="lib/jquery/jquery-ui-1.8.2.custom.min.js"></script>		<!-- the main jQuery UI library in its minified form -->
+		
+		<!-- *** SAF application specific scripts *** -->
+        <script type="text/javascript" src="js/saf-application.js"></script>	<!-- deals with the overall management and coordination -->
+	
+	</head>
+    <body>
+    	<script type="text/javascript">
+			// !<[CDATA[
+			jQuery(document).ready(init);
+			
+			/**
+			 * Initializes the application.
+			 */
+			function init()
+			{
+				var app = new Application();
+				
+				// start the initialization process
+				app.main();
+			}
+			
+			
+			// ]]>
+		</script>
+		<div class="ui-corner-all ui-state-highlight">
+						  <p>
+						    
+						    <strong>Hey! </strong>Sample ui-state-highlight style.
+						  </p>
+						</div>
+		
+		<table>		        
+	        <tr>
+				<td><h1>Similar Artist Finder</h1></td>
+			</tr>
+			
+			<tr>
+				<td><label>Artist's name? <input type="text" size="32" id="artistNameAutocomplete"></label></td>
+				<td><button id="findSimilarButton" name="findSimilarButton">Find</button></td>				
+			</tr>
+			
+			<tr>
+				<td colspan="2">
+					<div id="statusBar">
+						<!-- status information here -->
+					</div>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<div id="selectedArtistInfo">
+						<!-- information about the selected artist here -->
+						
+					</div>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<div id="artistList">
+					<!-- similar artists here -->
+					</div>
+				</td>
+			</tr>
+		</table>		
+    </body>
+</html>
