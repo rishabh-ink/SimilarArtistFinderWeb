@@ -1,0 +1,5 @@
+Similar Artist Finder
+version 0.1.0
+Finds similar artists based upon the given artist. Uses Last.fm, Yahoo! Pipes, YQL, jQuery and jQuery UI.
+
+See it in action at http://bit.ly/SimArtFin
